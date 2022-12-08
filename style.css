@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    /* primary */
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    /* neutral */
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+ 
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+body {
+    font-size: 16px !important;
+    font-family: Karla !important;
+    font-weight: 400 !important;
+    background: var(--Light-Gray) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 100vh !important;
+    height: 100% !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+.container {
+    margin: 0 auto !important;
+    max-width: 668px !important;
+}
+
+/* ========= TOP SECTION ========= */
+.top {
+    background: white !important;
+}
+.heading {
+    color: var(--Cyan) !important;
+    font-weight: 700 !important;
+}
+.subheading {
+    color: var(--Bright-Yellow) !important;
+    font-weight: 700 !important;
+}
+.desc {
+    color: var(--Grayish-Blue) !important;
+}
+
+/* ============ BOTTOM LEFT SECTION ======== */
+.b-left, .b-right {
+    background: var(--Cyan) !important;
+    color: var(--Light-Gray) !important;
+}
+.b-left {
+    border-bottom-left-radius: 5px !important;
+}
+.subscription .plan {
+    font-weight: 700 !important;
+}
+.subscription .amount {
+    font-size: 2rem !important;
+    font-weight: 700 !important; 
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px !important; 
+}
+.subscription .amount .muted {
+    font-size: 16px !important;
+    opacity: 0.5 !important;
+}
+.subscription a {
+    color: var(--Light-Gray) !important;
+    font-weight: 700 !important;
+}
+.subscription .btn {
+    background: var(--Bright-Yellow) !important;
+}
+
+ 
+/* ======= BOTTOM RIGHT SECTION ========= */
+.b-right {
+    border-bottom-right-radius: 5px !important;
+    opacity: 0.8 !important;
+}
+.why-us .details {
+    max-width: 210px !important; 
+    width: 100% !important;
+    font-size: 15px !important;
+}
+
+/* ======= MOBILE DEVICES ========= */
+@media screen and (max-width: 700px) {
+     .row {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .col {
+        max-width: 355px !important;
+        width: 100% !important;
+    }
+    .b-left {
+        border-bottom-left-radius: 0 !important;
+    }
+    .b-right {
+        border-bottom-left-radius: 5px !important;
+    }
+}
